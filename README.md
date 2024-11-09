@@ -1,2 +1,2 @@
 # DynMSN
-DynMSN: Dynamic Multi-scale Synthesizing Network For Multivariate Time Series Anomaly Detection
+The code is currently being refined, and the source code will be made available upon its release.
