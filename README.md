@@ -62,17 +62,7 @@ Attn_inter = Softmax(Q_inter * K_inter^T / √d_m') * V_inter
 - Aggregates multi-scale outputs with learned pathway weights
 - Formula: `X_out = (1/N) * Σ P̄(X_trans)_i * T(X_out^i)`
 
-### 4. Feature and Temporal GAT Layers
-- **Feature-Oriented GAT**: Models dependencies among different features
-- **Time-Oriented GAT**: Captures temporal dependencies across time steps
-- Both use GATv2 by default for dynamic attention computation
-
-### 5. GRU Layer
-- Processes concatenated outputs from convolution, GAT, and multi-scale blocks
-- Captures long-term sequential patterns
-- Hidden dimension: 150 (configurable)
-
-### 6. Joint Optimization Modules
+### 4. Joint Optimization Modules
 
 #### Forecasting Module
 - Predicts future time-series values using MLP
@@ -225,6 +215,5 @@ For questions or issues, please contact the authors or open an issue in the repo
 ## Acknowledgments
 
 This work builds upon research in multivariate time series anomaly detection and incorporates techniques from:
-- Graph Attention Networks (GAT and GATv2)
 - Variational Autoencoders (VAE)
 - SPOT algorithm for threshold determination
